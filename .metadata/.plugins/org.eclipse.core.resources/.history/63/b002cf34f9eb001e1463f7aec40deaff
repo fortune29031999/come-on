@@ -1,0 +1,24 @@
+package com.Studentmarksheet.Service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.Studentmarksheet.Dao.StudentmarksheetDao;
+import com.Studentmarksheet.Entity.StudentmarksheetEntity;
+
+@Service
+public class StudentmarksheetService {
+	@Autowired
+	StudentmarksheetDao studentmarksheetdao;
+
+	public String geter(List<StudentmarksheetEntity> a) {
+		for (StudentmarksheetEntity x : a) {
+			x.setSem1total(x.getSem1practical() + x.getSem1theory());
+			x.setSem2total(x.getSem2practical() + x.getSem2theory());
+		}
+		return studentmarksheetdao.geter(a);
+	}
+
+}

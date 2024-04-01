@@ -1,0 +1,5 @@
+package com.StudentDetails.exception;
+
+public class Globlaexception {
+
+}

@@ -1,0 +1,16 @@
+1711452896927	Rename package 'com.StudentDetails'
+1711453180220	Rename package 'com.studentmarksheetservice'
+1711453390631	Delete element
+1711453462275	Rename type 'StudentmarksheetService'
+1711453556255	Rename type 'StudentMarkSheetApplication'
+1711453620485	Delete element
+1711515194909	Rename package 'com.studentmarksheetController'
+1711515287218	Rename package 'com.studentmarksheetDao'
+1711515304523	Rename package 'com.studentmarksheetEntity'
+1711515320003	Rename package 'com.studentmarksheetRepository'
+1711515338927	Rename package 'com.studentmarksheetService'
+1711515915747	Move compilation unit
+1711515955588	Move compilation unit
+1711515998525	Move compilation unit
+1711516077633	Move compilation unit
+1711516144687	Move compilation unit

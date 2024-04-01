@@ -1,0 +1,18 @@
+package com.Annotations.Controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.Annotations.Employee;
+
+@Controller
+public class EmployeeController {
+  @Autowired
+  Employee e;
+  
+  @GetMapping("/geter")
+  public String getmapp() {
+	  return e.getMessage();
+  }
+}

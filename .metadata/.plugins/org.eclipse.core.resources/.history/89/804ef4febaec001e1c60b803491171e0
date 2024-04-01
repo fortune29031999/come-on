@@ -1,0 +1,71 @@
+package com.StudentResult.Service;
+
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.StudentResult.Dao.StudentResultDao;
+import com.StudentResult.Entity.StudentResultEntity;
+
+@Service
+public class StudentResultService {
+	@Autowired
+	StudentResultDao studentresultdao;
+
+	public String get(List<StudentResultEntity> a) {
+
+		return studentresultdao.get(a);
+	}
+	public List<StudentResultEntity> find(List<StudentResultEntity> a) {
+		
+		a=studentresultdao.find();
+		List<Float>d=a.stream().map(x->x.getPercentage()).sorted().rever
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				toList();
+		Collections.sort(a).reverse(a);
+	}
+	
+}

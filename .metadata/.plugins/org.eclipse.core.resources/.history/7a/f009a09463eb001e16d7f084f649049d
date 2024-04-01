@@ -1,0 +1,20 @@
+package com.StudentDetails.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+
+import com.StudentDetails.dao.StudentdetailsDao;
+import com.StudentDetails.entity.StudentdetailsEntity;
+
+@Service
+public class StudentdetailsService {
+	@Autowired
+	StudentdetailsDao studentdetailsdao;
+	public String get(List< StudentdetailsEntity>a) {
+		return studentdetailsdao.get(a);
+	}
+ 
+}

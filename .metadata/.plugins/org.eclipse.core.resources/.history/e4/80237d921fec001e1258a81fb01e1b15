@@ -1,0 +1,16 @@
+package com.StudentResult.Dao;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.StudentResult.Entity.StudentResultEntity;
+import com.StudentResult.Repository.StudentResultRepository;
+
+public class StudentResultDao {
+@Autowired
+StudentResultRepository studentresultdao;
+public String get(List<StudentResultEntity> a) {
+	studentresultrepository.sa
+}
+}

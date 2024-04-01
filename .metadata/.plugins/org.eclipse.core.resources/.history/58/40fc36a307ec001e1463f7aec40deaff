@@ -1,0 +1,7 @@
+package com.StudentResult.Customs;
+
+import com.StudentResult.Marksheet.StudentdetailsEntity;
+
+public class Studentsandmarks {
+  private StudentdetailsEntity Students;
+}

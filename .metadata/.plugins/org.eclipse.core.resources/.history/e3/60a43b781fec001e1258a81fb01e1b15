@@ -1,0 +1,13 @@
+package com.StudentResult.Dao;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.StudentResult.Repository.StudentResultRepository;
+
+public class StudentResultDao {
+@Autowired
+StudentResultRepository studentresultdao;
+public String get() {
+	return studentresultrepository.
+}
+}

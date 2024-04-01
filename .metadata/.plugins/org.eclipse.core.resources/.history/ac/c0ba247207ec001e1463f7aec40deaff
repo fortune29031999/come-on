@@ -1,0 +1,5 @@
+package com.StudentResult.Customs;
+
+public class Studentsandmarks {
+  private StudentDetailsEntity Students;
+}

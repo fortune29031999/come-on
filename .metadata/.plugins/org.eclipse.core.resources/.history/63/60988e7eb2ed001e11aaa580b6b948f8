@@ -1,0 +1,5 @@
+log4j.rootLogger=INFO,Appender1
+log4j.append.Appender1=org.apache.log4j.FileAppender
+log4j.appender.Appender1.File=D:\\Log4jdetails\\mylog.txt
+log4j.appender.Appender1.layout=org.apache.log4j.patternLayout
+log4j.appender.Appnder1.layout.conversationPattern=%-7p %d[%t] %c %x -%m %n

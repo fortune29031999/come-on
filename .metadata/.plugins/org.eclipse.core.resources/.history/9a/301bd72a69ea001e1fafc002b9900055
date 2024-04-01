@@ -1,0 +1,19 @@
+package com.gst.dao;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.gst.entity.Gst;
+
+public class GstDao {
+	@Autowired
+	Gst gstdao;
+	public String inserting( List<Gst> g) {
+	    
+	    return gstdao.inserting(g);
+	}
+	public List<Gst> finding(){
+		return gstdao.finding();
+	}
+}

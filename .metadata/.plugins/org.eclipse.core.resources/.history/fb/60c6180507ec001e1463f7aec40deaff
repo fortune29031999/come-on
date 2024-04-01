@@ -1,0 +1,12 @@
+package com.StudentResult.Controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.StudentResult.Service.StudentResultService;
+
+@RestController
+public class StudentResultController {
+@Autowired
+StudentResultService studentresultservice;
+}

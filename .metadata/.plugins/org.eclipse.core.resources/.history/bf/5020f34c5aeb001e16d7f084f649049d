@@ -1,0 +1,19 @@
+package com.StudentDetails.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import com.StudentDetails.dao.StudentdetailsDao;
+import com.StudentDetails.entity.StudentdetailsEntity;
+
+
+public class StudentdetailsService {
+	@Autowired
+	StudentdetailsDao studentdetailsdao;
+	public String get(List< StudentdetailsEntity>a) {
+		return studentdetailsdao.get(a);
+	}
+ 
+}

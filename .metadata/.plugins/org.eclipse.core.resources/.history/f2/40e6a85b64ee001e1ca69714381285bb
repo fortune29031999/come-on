@@ -1,0 +1,11 @@
+package com.Annotations;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class JuniorEmployee implements Employee {
+
+	public String getMessage() {
+		return "this is junior";
+	}
+}

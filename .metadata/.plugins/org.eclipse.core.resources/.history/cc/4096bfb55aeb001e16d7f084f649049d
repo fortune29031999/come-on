@@ -1,0 +1,16 @@
+package com.StudentDetails.dao;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.StudentDetails.entity.StudentdetailsEntity;
+import com.StudentDetails.repository.StudentdetailsRepository;
+
+public class StudentdetailsDao {
+	@Autowired
+	StudentdetailsRepository studentdetailsrepository;
+	public String get(List< StudentdetailsEntity>a) {
+		return studentdetailsrepository.get(a);
+	}
+}

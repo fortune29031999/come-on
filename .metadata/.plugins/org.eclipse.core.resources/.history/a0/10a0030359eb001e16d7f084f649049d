@@ -1,0 +1,16 @@
+package com.StudentDetails.service;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="student")
+public class StudentdetailsService {
+ private int id;
+ private int rollnumber;
+ private String name;
+ private char gender;
+ private int age;
+ private String course;
+ private float attendance;
+}

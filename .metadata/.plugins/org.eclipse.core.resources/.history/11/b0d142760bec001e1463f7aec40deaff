@@ -1,0 +1,32 @@
+package com.StudentResult.Controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.ParameterizedTypeReference;
+import org.springframework.http.HttpMethod;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
+
+import com.StudentResult.Customs.Studentsandmarks;
+import com.StudentResult.Service.StudentResultService;
+import com.StudentResult.StudentDetails.StudentdetailsEntity;
+
+@RestController
+public class StudentResultController {
+	@Autowired
+	StudentResultService studentresultservice;
+	@Autowired
+	RestTemplate resttemplate;
+
+	@GetMapping("/getservice")
+	public List<Studentsandmarks> get() {
+		String url = "https://localhost:8080/insert";
+		String url1 = "https://localhost:8081/insertt";
+		List<Studentsandmarks> s=resttemplate.exchange(url,HttpMethod.GET, null,new ParameterizedTypeReference<List<Studentsandmarks>>() {
+		}).getBody();
+		return s;
+		
+	}
+}

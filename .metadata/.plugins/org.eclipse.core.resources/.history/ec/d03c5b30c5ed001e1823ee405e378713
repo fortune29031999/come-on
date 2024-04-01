@@ -1,0 +1,8 @@
+package com.junitproject;
+
+import org.junit.Test;
+
+public class AssertProgram {
+@Test
+
+}

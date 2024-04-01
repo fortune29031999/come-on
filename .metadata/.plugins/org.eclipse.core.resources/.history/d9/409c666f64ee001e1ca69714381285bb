@@ -1,0 +1,13 @@
+package com.Annotations;
+
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
+
+@Component
+public class JuniorEmployee implements Employee {
+@Primary
+	public String getMessage() {
+		return "this is junior";
+	}
+}

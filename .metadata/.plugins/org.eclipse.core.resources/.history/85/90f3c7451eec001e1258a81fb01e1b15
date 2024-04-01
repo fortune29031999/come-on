@@ -1,0 +1,13 @@
+package com.StudentResult.Service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.StudentResult.Repository.StudentResultRepository;
+
+public class StudentResultService {
+@Autowired
+StudentResultRepository studentresultrepository;
+public String get() {
+	return studentresultrepository.get();
+}
+}

@@ -1,0 +1,22 @@
+package com.StudentResult.Customs;
+
+import com.StudentResult.Marksheet.StudentmarksheetEntity;
+import com.StudentResult.StudentDetails.StudentdetailsEntity;
+
+public class Studentsandmarks {
+  private StudentdetailsEntity students;
+  private StudentmarksheetEntity marks;
+public StudentdetailsEntity getStudents() {
+	return students;
+}
+public void setStudents(StudentdetailsEntity students) {
+	this.students = students;
+}
+public StudentmarksheetEntity getMarks() {
+	return marks;
+}
+public void setMarks(StudentmarksheetEntity marks) {
+	this.marks = marks;
+}
+
+}

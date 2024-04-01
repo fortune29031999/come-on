@@ -1,0 +1,18 @@
+package com.StudentResult.Controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
+
+import com.StudentResult.Service.StudentResultService;
+
+@RestController
+public class StudentResultController {
+@Autowired
+StudentResultService studentresultservice;
+@Autowired
+RestTemplate resttemplate;
+
+//@GetMapping("/getservice")
+}
